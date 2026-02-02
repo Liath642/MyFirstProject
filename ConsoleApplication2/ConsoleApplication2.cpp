@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
+double CalcPay(int a, double b);
+
 int main()
 {
-	double hours;
+	int hours;
 	double payrate;
 	cout << "Enter the hours as integer -> $";
 	cin >> hours;
@@ -12,6 +14,6 @@ int main()
 	cout << " your payments is -> $" << CalcPay(hours,payrate) << endl;
 }
 
-double CalcPay(double a, double b) {
+double CalcPay(int a, double b) {
 	return (a * b);
 }
